@@ -303,7 +303,7 @@ $$\left[\begin{array}{ccc}
 标签: `\label{yourlabel}`  
 带括号引用: `eqref{yourlabel}`  
 不带括号引用: `ref{yourlabel}`  
-$\color{red}{Obsidian(也许是markdown?)中的标签和引用有问题,不要使用}$
+$\color{red}{Obsidian(也许是markdown?)中的标签和引用有问题,不建议使用}$
 
 ## 字体
 
