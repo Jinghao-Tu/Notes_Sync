@@ -138,7 +138,8 @@ aligned通常和eqution环境等配合使用, 其放在equation环境中, 意味
 
 3\.方程组
 
-(1)使用`\begin{array}...\end{array}`与`\left \{` 和 `\right.`$$\left \{
+(1)使用`\begin{array}...\end{array}`与`\left \{` 和 `\right.`
+$$\left \{
 \begin{array}{c}
 a_1x+b_1y+c_1z=d_1 \\
 a_2x+b_2y+c_2z=d_2 \\
