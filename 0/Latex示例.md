@@ -1,4 +1,6 @@
-## 行内公式 
+# LaTeX 公式示例
+
+## 行内公式
 
 $\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$
 
@@ -128,9 +130,10 @@ a&=b+c-d \\
 align是环境, 地位与eqution相同, align*除了产生编号外, 其他与align相同  
 `\begin{aligned}...\end{aligned}`也能表示多行公式的开始和结束.
 
-aligned通常和eqution环境等配合使用, 其放在equation环境中, 意味着多行公式只占用当前eqution环境的一个编号.   
+aligned通常和eqution环境等配合使用, 其放在equation环境中, 意味着多行公式只占用当前eqution环境的一个编号.  
 `\begin{aligned} <空格或者换行> [<任意内容>]`中`<任意内容>`作为`aligned`的可选参数
-* t, c, b 三者之一时,分别表示与环境之前的内容进行(top, center, bottom)纵向对齐. 
+
+* t, c, b 三者之一时,分别表示与环境之前的内容进行(top, center, bottom)纵向对齐.  
 * 为空时, 同`c`
 
 3\.方程组
