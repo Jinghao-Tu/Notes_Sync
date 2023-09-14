@@ -1,2 +1,2 @@
-# Obsidian同步
-Obsidian同步
+# 笔记同步
+笔记同步
