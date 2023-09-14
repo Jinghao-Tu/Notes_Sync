@@ -62,12 +62,12 @@ $$\begin{aligned}
 
 1.求和$$\sum_{i=1}^n$$
 
-2.积分$$\begin{aligned}
-\int_l^\infty \quad
-\iint \quad
-\iiint \quad
-\iiiint \quad
-\oint \quad
+2.积分
+$$\begin{aligned}
+\int_{l}^{\infty} \quad
+\iint{} \quad
+\iiint{} \quad
+\oint{} \quad
 ...
 \end{aligned}$$
 
@@ -246,19 +246,20 @@ a_3x+b_3y+c_3z=d_3
 \end{split}$$
 
 ## 顶部符号
+
 $$\begin{split}
-\hat x \quad
-\widehat xy \quad
-\overline x \quad
-\vec x \quad
-\overrightarrow x \quad
-\overleftarrow x \quad
-\dot x \quad
-\ddot x \quad
-\dddot x
+\hat {x} \quad
+\widehat{xy} \quad
+\overline {x} \quad
+\vec {x} \quad
+\overrightarrow {x} \quad
+\overleftarrow {x} \quad
+\dot {x} \quad
+\ddot {x} \quad
 \end{split}$$
 
 ## 表格
+
 $$\begin{array}{c|lcr}
 n & \text{Left} & \text{Center} & \text{Right} \\
 \hline
@@ -269,7 +270,8 @@ n & \text{Left} & \text{Center} & \text{Right} \\
 
 ## 矩阵
 
-1.基本用法$$\begin{matrix}
+1.基本用法
+$$\begin{matrix}
 1 & x & x^2 \\
 1 & y & y^2 \\
 1 & z & z^2 \\
@@ -285,7 +287,8 @@ n & \text{Left} & \text{Center} & \text{Right} \\
 3.省略元素  
 用`\cdots`, `\ddots`, `\vdots`代替即可
 
-4.增广矩阵$$\left[\begin{array}{ccc}
+4.增广矩阵
+$$\left[\begin{array}{ccc}
 1&2&3\\
 4&5&6
 \end{array}\right]$$
@@ -299,6 +302,7 @@ n & \text{Left} & \text{Center} & \text{Right} \\
 $\color{red}{Obsidian(也许是markdown?)中的标签和引用有问题,不要使用}$
 
 ## 字体
+
 $\mathbb CHNQRZ$  
 $\Bbb CHNQRZ$  
 $\mathbf ABCDEFGHIJKLMNOPQRSTUVWXYZ$  
@@ -313,6 +317,7 @@ $\mathfrak ABCDEFGHIJKLMNOPQRSTUVWXYZ$
 $\mathfrak abcdefghijklmnopqrstuvwxyz$
 
 ## 颜色
+
 使用`\color{yourcolor}{yourtext}`标签
 $$\begin{split}
 \color{black}{text} \quad
