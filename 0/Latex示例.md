@@ -297,13 +297,24 @@ $$\left[\begin{array}{ccc}
 4&5&6
 \end{array}\right]$$
 
+## 距离
+紧贴$a\!b$  
+没有空格$ab$  
+小空格$a\,b$  
+中等空格$a\;b$  
+大空格$a\ b$  
+quad空格$a\quad b$  
+双倍quad空格$a\qquad b$  
+~空格$a ~ b$
+
 ## 公式标号与引用
 
 标号: `\tag{yourtab}`  
 标签: `\label{yourlabel}`  
 带括号引用: `eqref{yourlabel}`  
 不带括号引用: `ref{yourlabel}`  
-$\color{red}{Obsidian(也许是markdown?)中的标签和引用有问题,不建议使用}$
+$\color{red}{\text{Obsidian(也许是markdown?)中的标签和引用有问题,不建议使用}}$  
+$\color{green}{\text{这里可以加几个例子}}$
 
 ## 字体
 
