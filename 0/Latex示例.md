@@ -298,6 +298,7 @@ $$\left[\begin{array}{ccc}
 \end{array}\right]$$
 
 ## 距离
+
 紧贴$a\!b$  
 没有空格$ab$  
 小空格$a\,b$  
