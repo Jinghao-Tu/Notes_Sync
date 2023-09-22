@@ -1,3 +1,6 @@
 # dir 不需要提交的目录
 .git
 .vscode
+
+# ppt
+Computer_Architecture/计算机体系结构 - 第*讲.pdf
