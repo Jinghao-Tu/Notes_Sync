@@ -240,9 +240,10 @@ $$ p_0 = 1 - \sqrt[k]{\frac{1}{k}} $$
 则有
 $$ \begin{aligned}
     D(X; n=k) &= D(\text{把}k\text{移动到最后一位的交换次数}) + D(k\text{排好后, 前}k-1\text{位的交换次数}) \\
-    &= \frac{\sum_{i=0}^{k-1}i^2}{k} + D(X; n = k-1) \\
-    &= \frac{(k-1)(2k-1)}{6} + D(X; n = k-1) \\
+    &= \frac{\sum_{i=0}^{k-1}i^2}{k} - \left(\frac{k-1}{2}\right)^2 + D(X; n = k-1) \\
+    &= \frac{(k-1)(2k-1)}{6} - \frac{k^2-2k+1}{4} + D(X; n = k-1) \\
+    & = \frac{k^2-1}{12} + D(X; n = k-1) \\
     \cdots \\
-    &= \sum_{i=1}^{k}\frac{(i-1)(2i-1)}{6} \\
-    &= \frac{4k^3-3k^2-k}{36}
+    &= \sum_{i=1}^{k}\frac{i^2-1}{12} \\
+    &= \frac{2k^3+3k^2-5k}{72}
 \end{aligned} $$
