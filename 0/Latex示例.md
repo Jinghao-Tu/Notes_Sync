@@ -18,6 +18,7 @@ $$\begin{aligned}
 \delta \quad
 \Delta \quad
 \epsilon \quad
+\varepsilon \quad
 \zeta \quad
 \eta \quad
 \theta \quad
