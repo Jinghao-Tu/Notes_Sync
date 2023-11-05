@@ -9,12 +9,12 @@ author: "013-涂靖昊"
 > 1.当执行完 `system_interrupt` 函数, 执行 `153` 行 `iret` 时, 记录栈的变化情况.
 
 <figure style="text-align: center;">
-  <img src="2_1.png" alt="", width="", height="", >
+  <img src="images/2_1.png" alt="", width="", height="", >
   <figcaption>图1 执行 iret 前的状态</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-  <img src="2_2.png" alt="", width="", height="", >
+  <img src="images/2_2.png" alt="", width="", height="", >
   <figcaption>图2 执行 iret 后的状态</figcaption>
 </figure>
 
@@ -26,14 +26,14 @@ author: "013-涂靖昊"
 `cs` 代码段寄存器中所装载段选择子的后两位决定当前特权级 CPL, `00` 表示实模式, `11` 表示保护模式.
 
 <figure style="text-align: center;">
-  <img src="2_3.png" alt="", width="", height="", >
+  <img src="images/2_3.png" alt="", width="", height="", >
   <figcaption>图3 进入 system_interrupt 前的状态</figcaption>
 </figure>
 
 从图 3 中可以看到此时 `cs` 寄存器的值为 `0x000f`, 后两位为 `11` 说明此时正在以保护模式 + 特权级 3 在执行任务 0.
 
 <figure style="text-align: center;">
-  <img src="2_4.png" alt="", width="", height="", >
+  <img src="images/2_4.png" alt="", width="", height="", >
   <figcaption>图4 进入 system_interrupt 后的状态</figcaption>
 </figure>
 
@@ -49,12 +49,12 @@ author: "013-涂靖昊"
 > 3.当发生时钟中断时, 进入到 `timer_interrupt` 程序, 请详细记录从任务 `0` 切换到任务 `1` 的过程.
 
 <figure style="text-align: center;">
-  <img src="2_5.png" alt="", width="", height="", >
+  <img src="images/2_5.png" alt="", width="", height="", >
   <figcaption>图5 比较当前的任务是否是任务 1</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-  <img src="2_6.png" alt="", width="", height="", >
+  <img src="images/2_6.png" alt="", width="", height="", >
   <figcaption>图6 获取比较的结果, 并设置 eflags 寄存器</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ author: "013-涂靖昊"
 接着下一条指令 `ljmp $TSS1_SEL, $0`, 即图 6 中的 `jmpf 0x0030:00000000`, 会加载任务 `1` 的 TSS 段, 跳转到任务 `1` 的代码段开始执行, 地址为 `0x10f4`.
 
 <figure style="text-align: center;">
-  <img src="2_7.png" alt="", width="", height="", >
+  <img src="images/2_7.png" alt="", width="", height="", >
   <figcaption>图7 跳转执行任务 1</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ author: "013-涂靖昊"
 > 4.又过了 `10ms`, 从任务 `1` 切换到任务 `0`, 整个流程是怎样的? `TSS` 是如何变化的? 各个寄存器的值又是如何变化的?
 
 <figure style="text-align: center;">
-  <img src="2_8.png" alt="", width="", height="", >
+  <img src="images/2_8.png" alt="", width="", height="", >
   <figcaption>图8 比较并判断是否跳转</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ author: "013-涂靖昊"
 再执行 `0x015c` 处的指令, 继承上一次任务 `0` 的上下文, 因为上一次任务 `0` 是在 `0x0149` 中断的, 下一条指令地址是 `0x150`, 所以这次会跳转到 `0x0150`处.
 
 <figure style="text-align: center;">
-  <img src="2_9.png" alt="", width="", height="", >
+  <img src="images/2_9.png" alt="", width="", height="", >
   <figcaption>图9 重新执行任务 0</figcaption>
 </figure>
 
