@@ -5,7 +5,10 @@
 # file 不需要提交的文件
 
 # ppt
-Computer_Architecture/计算机体系结构 - 第*讲.pdf
+Computer_Architecture/ppt
+Computer_Architecture/Reading
+Computer_Architecture/Verilog
+Computer_Architecture/《计算机体系结构A》教学大纲.pdf
 Computing_Modeling/计算建模*.pdf
 Database_System/Notes/ppt-DBMS-*.pdf
 Operating_System/notes/slides/*.pdf
