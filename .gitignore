@@ -3,6 +3,7 @@
 .vscode
 
 # file 不需要提交的文件
+.gitignore
 
 # ppt
 Computer_Architecture/ppt
