@@ -1,0 +1,184 @@
+Time	Desc
+0	init: hello pid=7
+11349	do_execve
+11349	bread(): dev=769, block=659
+11349	begin getblk(): dev=769, block=659
+11349	brelse(): dev=769, block=659
+11349	bread(): dev=769, block=9861
+11349	begin getblk(): dev=769, block=9861
+11349	brelse(): dev=769, block=9861
+11349	bread(): dev=769, block=14045
+11349	begin getblk(): dev=769, block=14045
+11349	brelse(): dev=769, block=14045
+11349	bread(): dev=769, block=13
+11349	begin getblk(): dev=769, block=13
+11349	brelse(): dev=769, block=13
+11349	do_execve: get m_inode
+11349		i_size: 20591
+11349		i_num: 2
+11350		i_dev: 769
+11350		i_zone[0]: 687
+11350		i_zone[1]: 662
+11350		i_zone[2]: 663
+11350		i_zone[3]: 664
+11350		i_zone[4]: 665
+11350		i_zone[5]: 670
+11350		i_zone[6]: 671
+11350		i_zone[7]: 672
+11350		i_zone[8]: 0
+11350	bread(): dev=769, block=672
+11350	begin getblk(): dev=769, block=672
+11350	end getblk(): find!
+11350	ll_rw_block():rw=0 major=3
+11350		bh->b_dev=769 bh->b_blocknr=672
+11350	sleep on
+11350	is switched by 0
+11350	wake_up()
+11350		i_zone[7][0]: 673
+11350		i_zone[7][1]: 674
+11350		i_zone[7][2]: 675
+11350		i_zone[7][3]: 676
+11350		i_zone[7][4]: 677
+11350		i_zone[7][5]: 678
+11350		i_zone[7][6]: 679
+11350		i_zone[7][7]: 680
+11350		i_zone[7][8]: 681
+11350		i_zone[7][9]: 682
+11350		i_zone[7][10]: 683
+11350		i_zone[7][11]: 684
+11350		i_zone[7][12]: 685
+11350		i_zone[7][13]: 686
+11350	brelse(): dev=769, block=672
+11350	bread(): dev=769, block=687
+11350	begin getblk(): dev=769, block=687
+11350	end getblk(): find!
+11350	ll_rw_block():rw=0 major=3
+11350		bh->b_dev=769 bh->b_blocknr=687
+11350	brelse(): dev=769, block=687
+11351	do_execve: update inode, tcb and context
+11351	do_execve: update eip, new entry eip[0]: 0
+11351	bread_page(): address=16355328, dev=769
+11351		b[0]=662, b[1]=663, b[2]=664, b[3]=665
+11351	begin getblk(): dev=769, block=662
+11351	end getblk(): find!
+11351	ll_rw_block():rw=0 major=3
+11351		bh->b_dev=769 bh->b_blocknr=662
+11351	begin getblk(): dev=769, block=663
+11351	end getblk(): find!
+11352	ll_rw_block():rw=0 major=3
+11352		bh->b_dev=769 bh->b_blocknr=663
+11352	begin getblk(): dev=769, block=664
+11352	end getblk(): find!
+11352	ll_rw_block():rw=0 major=3
+11352		bh->b_dev=769 bh->b_blocknr=664
+11352	begin getblk(): dev=769, block=665
+11352	end getblk(): find!
+11352	ll_rw_block():rw=0 major=3
+11352		bh->b_dev=769 bh->b_blocknr=665
+11352	brelse(): dev=769, block=662
+11352	brelse(): dev=769, block=663
+11352	brelse(): dev=769, block=664
+11352	brelse(): dev=769, block=665
+11352	bread(): dev=769, block=672
+11352	begin getblk(): dev=769, block=672
+11352	brelse(): dev=769, block=672
+11352	bread(): dev=769, block=672
+11352	begin getblk(): dev=769, block=672
+11352	brelse(): dev=769, block=672
+11352	bread(): dev=769, block=672
+11352	begin getblk(): dev=769, block=672
+11352	brelse(): dev=769, block=672
+11352	bread(): dev=769, block=672
+11352	begin getblk(): dev=769, block=672
+11352	brelse(): dev=769, block=672
+11352	bread_page(): address=16314368, dev=769
+11352		b[0]=679, b[1]=680, b[2]=681, b[3]=682
+11352	begin getblk(): dev=769, block=679
+11353	end getblk(): find!
+11353	ll_rw_block():rw=0 major=3
+11353		bh->b_dev=769 bh->b_blocknr=679
+11353	begin getblk(): dev=769, block=680
+11353	end getblk(): find!
+11353	ll_rw_block():rw=0 major=3
+11353		bh->b_dev=769 bh->b_blocknr=680
+11353	begin getblk(): dev=769, block=681
+11353	end getblk(): find!
+11353	ll_rw_block():rw=0 major=3
+11353		bh->b_dev=769 bh->b_blocknr=681
+11353	begin getblk(): dev=769, block=682
+11353	end getblk(): find!
+11353	ll_rw_block():rw=0 major=3
+11353		bh->b_dev=769 bh->b_blocknr=682
+11353	brelse(): dev=769, block=679
+11353	brelse(): dev=769, block=680
+11353	brelse(): dev=769, block=681
+11353	brelse(): dev=769, block=682
+11353	bread(): dev=769, block=672
+11353	begin getblk(): dev=769, block=672
+11353	brelse(): dev=769, block=672
+11353	bread(): dev=769, block=672
+11353	begin getblk(): dev=769, block=672
+11353	brelse(): dev=769, block=672
+11353	bread_page(): address=16310272, dev=769
+11353		b[0]=670, b[1]=671, b[2]=673, b[3]=674
+11353	begin getblk(): dev=769, block=670
+11353	end getblk(): find!
+11353	ll_rw_block():rw=0 major=3
+11354		bh->b_dev=769 bh->b_blocknr=670
+11354	begin getblk(): dev=769, block=671
+11354	end getblk(): find!
+11354	ll_rw_block():rw=0 major=3
+11354		bh->b_dev=769 bh->b_blocknr=671
+11354	begin getblk(): dev=769, block=673
+11354	end getblk(): find!
+11354	ll_rw_block():rw=0 major=3
+11354		bh->b_dev=769 bh->b_blocknr=673
+11354	begin getblk(): dev=769, block=674
+11354	end getblk(): find!
+11354	ll_rw_block():rw=0 major=3
+11354		bh->b_dev=769 bh->b_blocknr=674
+11354	brelse(): dev=769, block=670
+11354	brelse(): dev=769, block=671
+11354	brelse(): dev=769, block=673
+11354	brelse(): dev=769, block=674
+11354	bread(): dev=769, block=672
+11354	begin getblk(): dev=769, block=672
+11354	brelse(): dev=769, block=672
+11354	bread(): dev=769, block=672
+11354	begin getblk(): dev=769, block=672
+11354	brelse(): dev=769, block=672
+11354	bread(): dev=769, block=672
+11354	begin getblk(): dev=769, block=672
+11354	brelse(): dev=769, block=672
+11354	bread(): dev=769, block=672
+11354	begin getblk(): dev=769, block=672
+11354	brelse(): dev=769, block=672
+11354	bread_page(): address=16306176, dev=769
+11354		b[0]=675, b[1]=676, b[2]=677, b[3]=678
+11355	begin getblk(): dev=769, block=675
+11355	end getblk(): find!
+11355	ll_rw_block():rw=0 major=3
+11355		bh->b_dev=769 bh->b_blocknr=675
+11355	begin getblk(): dev=769, block=676
+11355	end getblk(): find!
+11355	ll_rw_block():rw=0 major=3
+11355		bh->b_dev=769 bh->b_blocknr=676
+11355	begin getblk(): dev=769, block=677
+11355	end getblk(): find!
+11355	ll_rw_block():rw=0 major=3
+11355		bh->b_dev=769 bh->b_blocknr=677
+11355	begin getblk(): dev=769, block=678
+11355	end getblk(): find!
+11355	ll_rw_block():rw=0 major=3
+11355		bh->b_dev=769 bh->b_blocknr=678
+11355	brelse(): dev=769, block=675
+11355	brelse(): dev=769, block=676
+11355	brelse(): dev=769, block=677
+11355	brelse(): dev=769, block=678
+11355	tty_write(0, 000034C0, 14)
+11355	con_write() nr=15. tty is printing!
+11355	exit
+11356	bread(): dev=769, block=13
+11356	begin getblk(): dev=769, block=13
+11356	brelse(): dev=769, block=13
+11356	is switched by 4
